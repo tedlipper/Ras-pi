@@ -81,22 +81,23 @@ while True or KeyboardInterrupt:
                         print("left			" + str(round(event.value,2)))
                     if event.value > 0.5:
                         print("right			 " + str(round(event.value,2)))
-                    if event.value < -0.15 and event.value > 0.15:
+                    if event.value < 0.15 and event.value > -0.15:
                         if event.value < 0:
-                            print("vertical center	" + str(round(event.value,2)))
+                            print("vertical center		" + str(round(event.value,2)))
                         elif event.value < 0:
-                            print("vertical center	 " + str(round(event.value,2)))
+                            print("vertical center		 " + str(round(event.value,2)))
                         else:
-                            print("wtf how")
+                            print("vertical center		 " + str(round(event.value,2)))
                 if event.axis == 1: # up/down
                     if event.value < -0.5:
                         print("up			" + str(round(event.value,2)))
                     if event.value > 0.5:
                         print("down			 " + str(round(event.value,2)))
-                    if event.value < -0.15 and event.value > 0.15:
+                    if event.value < 0.15 and event.value > -0.15:
                         if event.value < 0:
-                            print("vertical center	" + str(round(event.value,2)))
+                            print("vertical center		" + str(round(event.value,2)))
                         elif event.value < 0:
-                            print("vertical center	 " + str(round(event.value,2)))
+                            print("vertical center		 " + str(round(event.value,2)))
                         else:
-                            print("wtf how")
+                            print("vertical center		 " + str(round(event.value,2)))
+                            
