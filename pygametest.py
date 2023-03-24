@@ -55,43 +55,49 @@ while True or KeyboardInterrupt:
         if event.type ==JOYBUTTONDOWN:
             if event.button == 0:
                 #print("button 0 down")
-                print("A")
+                print("A  Down")
             if event.button == 1:
                 #print("button 1 down")
-                print("B")
+                print("B  Down")
             if event.button == 2:
                 #print("button 2 down")
-                print("X")
+                print("X  Down")
             if event.button == 3:
                 #print("button 4 down")
-                print("Y")
+                print("Y  Down")
             if event.button == 5:
                 #print("button 5 down")
-                print("RB")
+                print("RB Down")
             if event.button == 6:
                 print("button 6 down")
             if event.button == 7:
                 print("button 7 down")
             if event.button == 8:
-                print("button 8 down")
+                print("button 8 down")       
         if event.type == pygame.JOYAXISMOTION:
             if event.axis < 2: # Left stick
                 if event.axis == 0: # left/right
                     if event.value < -0.5:
                         print("left			" + str(round(event.value,2)))
                     if event.value > 0.5:
-                        print("right			" + str(round(event.value,2)))
-                    if event.value > -0.15 and event.value < 0.15:
-                        print("horisontal center	" + str(round(event.value,2)))
+                        print("right			 " + str(round(event.value,2)))
+                    if event.value < -0.15 and event.value > 0.15:
+                        if event.value < 0:
+                            print("vertical center	" + str(round(event.value,2)))
+                        elif event.value < 0:
+                            print("vertical center	 " + str(round(event.value,2)))
+                        else:
+                            print("wtf how")
                 if event.axis == 1: # up/down
                     if event.value < -0.5:
                         print("up			" + str(round(event.value,2)))
                     if event.value > 0.5:
-                        print("down			" + str(round(event.value,2)))
-                    if event.value < -0.25 and event.value > 0.25:
-                        print("vertical center	" + str(round(event.value,2)))
-  
-  
-  
-  
-  
+                        print("down			 " + str(round(event.value,2)))
+                    if event.value < -0.15 and event.value > 0.15:
+                        if event.value < 0:
+                            print("vertical center	" + str(round(event.value,2)))
+                        elif event.value < 0:
+                            print("vertical center	 " + str(round(event.value,2)))
+                        else:
+                            print("wtf how")
+                            
