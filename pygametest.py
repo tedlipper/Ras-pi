@@ -30,7 +30,7 @@ while True:
         print(JOYHATMOTION)
         """
 
-#the following code i did not make
+#the following code is a modified version of someone elses code
 #all redit to this absolute legend\/ \/ \/ \/
 #https://github.com/kevinmcaleer/xbox_controller/blob/main/xbox_controller.py
 
@@ -100,4 +100,3 @@ while True or KeyboardInterrupt:
                             print("vertical center	 " + str(round(event.value,2)))
                         else:
                             print("wtf how")
-                            
